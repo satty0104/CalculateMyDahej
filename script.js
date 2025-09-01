@@ -6,7 +6,7 @@ const jobTypes = {
 
 // Car options based on salary ranges (arranged by increasing price)
 const cars = [
-    "Cycle",
+    
     "Splendor",
     "WagonR",
     "Desire",
@@ -125,3 +125,4 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
