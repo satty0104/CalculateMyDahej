@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate My Dahej</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating background elements -->
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>💰 CalculateMyDahej</h1>
+        </div>
+
+        <div class="form-section">
+
+            <!-- Salary -->
+            <div class="form-group">
+                <label for="salary">💼 Enter Your Monthly Salary (₹)</label>
+                <input type="number" id="salary" placeholder="e.g. 55000" min="0">
+            </div>
+
+            <!-- Job -->
+            <div class="form-group">
+                <label for="job">🏢 Job Type</label>
+                <input type="text" id="job" placeholder="Enter job type (government/private)">
+            </div>
+
+            <!-- Property -->
+            <div class="form-group">
+                <label for="property">🏠 Property (in beegha)</label>
+                <input type="number" id="property" placeholder="e.g. 75" min="0">
+            </div>
+
+            <!-- Pets -->
+            <div class="form-group">
+                <label for="pet">🐄 Number of Pets (cows/buffaloes)</label>
+                <input type="number" id="pet" placeholder="e.g. 3" min="0">
+            </div>
+
+            <button class="calculate-btn" onclick="calculatePrediction()">
+                Calculate Dahej
+            </button>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <h3>🔄 Calculating Your Dahej...</h3>
+                <p>Please wait while we process your information</p>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div class="results" id="results" style="display: none;">
+            <div class="result-card">
+                <h3>💰 Dahej Prediction</h3>
+                <div class="result-item">
+                    <span class="result-label">Estimated Dahej:</span>
+                    <span class="result-value" id="predictedSalary">-</span>
+                </div>
+            </div>
+
+            <div class="car-recommendation" id="carRecommendation">
+                <div class="car-name" id="carName">-</div>
+                <div class="car-description" id="carDescription">
+                    Enter your details to see car recommendation
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
