@@ -60,7 +60,7 @@ function calculatePrediction() {
         // Private job adjustment
         if (job === 0) {
             dahej = Math.floor((sum + dahej) / 10);
-            showResult(dahej, cars[0], "You owe them dahej.");
+            showResult(dahej, "Cycle", "You owe them dahej.");
             return;
         }
 
@@ -117,6 +117,7 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
 
 
 
