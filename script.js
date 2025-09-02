@@ -50,7 +50,7 @@ function calculatePrediction() {
         }
 
         if (property === 0) {
-            showResult("-10,000,000", cars[0], "You don't deserve dahej!");
+            showResult("-10,000,000", "Cycle", "You don't deserve dahej!");
             return;
         }
 
@@ -117,5 +117,6 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
 
 
